@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetrieveMain">
+
+    <TextView
+        android:id="@+id/dropbox_location_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/retrieve_text"
+        android:textAlignment="viewStart"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_name_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dropbox_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/retrieve_dropbox_name_placeholder"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_address_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_location_textView" />
+
+    <TextView
+        android:id="@+id/dropbox_address_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/retrieve_dropbox_address_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_employee_initials_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_name_textView" />
+
+    <EditText
+        android:id="@+id/dropbox_employee_initials_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/retrieve_initials_hint"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_mib_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_address_textView" />
+
+    <Button
+        android:id="@+id/dropbox_mib_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_mib_dropbox"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_ballot_bin_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_employee_initials_editText"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/dropbox_ballot_bin_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_ballot_bins"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_sig1_button"
+        app:layout_constraintEnd_toEndOf="@+id/dropbox_mib_button"
+        app:layout_constraintStart_toStartOf="@+id/dropbox_mib_button"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_mib_button" />
+
+    <Button
+        android:id="@+id/dropbox_sig1_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_sig1"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_sig2_button"
+        app:layout_constraintEnd_toEndOf="@+id/dropbox_ballot_bin_button"
+        app:layout_constraintStart_toStartOf="@+id/dropbox_ballot_bin_button"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_ballot_bin_button" />
+
+    <Button
+        android:id="@+id/dropbox_sig2_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_sig2"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_submit_button"
+        app:layout_constraintEnd_toEndOf="@+id/dropbox_sig1_button"
+        app:layout_constraintStart_toStartOf="@+id/dropbox_sig1_button"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_sig1_button" />
+
+    <Button
+        android:id="@+id/dropbox_submit_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_submit"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dropbox_back_button"
+        app:layout_constraintEnd_toEndOf="@+id/dropbox_sig2_button"
+        app:layout_constraintStart_toStartOf="@+id/dropbox_sig2_button"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_sig2_button" />
+
+    <Button
+        android:id="@+id/dropbox_back_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/retrieve_back"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dropbox_submit_button"
+        app:layout_constraintStart_toStartOf="@+id/dropbox_submit_button"
+        app:layout_constraintTop_toBottomOf="@+id/dropbox_submit_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
