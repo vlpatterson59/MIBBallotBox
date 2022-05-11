@@ -13,11 +13,87 @@
         <action
             android:id="@+id/action_login_to_transfer"
             app:destination="@id/transfer" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
     </fragment>
 
     <fragment
         android:id="@+id/transfer"
         android:name="gov.hocoboe.mibballotboxchainofcustody.Transfer"
         android:label="fragment_transfer"
-        tools:layout="@layout/fragment_transfer" />
+        tools:layout="@layout/fragment_transfer" >
+        <action
+            android:id="@+id/action_transfer_to_retrieveMain"
+            app:destination="@id/retrieveMain" />
+        <action
+            android:id="@+id/action_transfer_to_transferBallotBins"
+            app:destination="@id/transferBallotBins" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/transferBallotBins"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.TransferBallotBins"
+        android:label="fragment_transfer_ballot_bins"
+        tools:layout="@layout/fragment_transfer_ballot_bins" >
+        <action
+            android:id="@+id/action_transferBallotBins_to_transfer"
+            app:destination="@id/transfer" />
+        <action
+            android:id="@+id/action_transferBallotBins_to_signature"
+            app:destination="@id/signature" />
+    </fragment>
+    <fragment
+        android:id="@+id/retrieveMain"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.RetrieveMain"
+        android:label="fragment_retrieve_main"
+        tools:layout="@layout/fragment_retrieve_main" >
+        <action
+            android:id="@+id/action_retrieveMain_to_signature"
+            app:destination="@id/signature" />
+        <action
+            android:id="@+id/action_retrieveMain_to_mailInBallotDropBox"
+            app:destination="@id/mailInBallotDropBox" />
+        <action
+            android:id="@+id/action_retrieveMain_to_retrieveBallotBins"
+            app:destination="@id/retrieveBallotBins" />
+    </fragment>
+    <fragment
+        android:id="@+id/signature"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.Signature"
+        android:label="fragment_signature"
+        tools:layout="@layout/fragment_signature" >
+        <action
+            android:id="@+id/action_signature_to_transferBallotBins"
+            app:destination="@id/transferBallotBins" />
+        <action
+            android:id="@+id/action_signature_to_retrieveMain"
+            app:destination="@id/retrieveMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/mailInBallotDropBox"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.MailInBallotDropBox"
+        android:label="fragment_mail_in_ballot_drop_box"
+        tools:layout="@layout/fragment_mail_in_ballot_drop_box" >
+        <action
+            android:id="@+id/action_mailInBallotDropBox_to_retrieveMain"
+            app:destination="@id/retrieveMain" />
+    </fragment>
+    <fragment
+        android:id="@+id/retrieveBallotBins"
+        android:name="gov.hocoboe.mibballotboxchainofcustody.RetrieveBallotBins"
+        android:label="fragment_retrieve_ballot_bins"
+        tools:layout="@layout/fragment_retrieve_ballot_bins" >
+        <action
+            android:id="@+id/action_retrieveBallotBins_to_retrieveMain"
+            app:destination="@id/retrieveMain" />
+    </fragment>
 </navigation>
