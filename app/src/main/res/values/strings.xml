@@ -76,5 +76,6 @@
     <string name="signature_submit">Accept</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="verify_steps_completed">verify steps completed</string>
 
 </resources>
