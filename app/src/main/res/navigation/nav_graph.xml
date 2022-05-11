@@ -65,6 +65,9 @@
         <action
             android:id="@+id/action_retrieveMain_to_retrieveBallotBins"
             app:destination="@id/retrieveBallotBins" />
+        <action
+            android:id="@+id/action_retrieveMain_to_transfer"
+            app:destination="@id/transfer" />
     </fragment>
     <fragment
         android:id="@+id/signature"

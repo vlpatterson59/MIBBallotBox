@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="16dp"
         android:text="@string/transfer_text"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -28,15 +28,15 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/transfer_ballot_bins_hint"
-        android:inputType="textPersonName"
+        android:importantForAutofill="no"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/transfer_bin1_seal_editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_textView"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/transfer_textView" />
 
     <EditText
         android:id="@+id/transfer_bin1_seal_editText"
@@ -82,15 +82,15 @@
         android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/transfer_ballots_received_hint"
-        android:inputType="textPersonName"
+        android:importantForAutofill="no"
+        android:inputType="number"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/transfer_transport_sig_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_bin2_seal_editText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/transfer_bin2_seal_editText" />
 
     <Button
         android:id="@+id/transfer_transport_sig_button"
@@ -102,7 +102,7 @@
         android:paddingBottom="8dp"
         android:text="@string/transfer_transport_sig"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/transfer_receive_sig_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +120,7 @@
         android:paddingBottom="8dp"
         android:text="@string/transfer_receive_sig"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/transfer_submit_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:text="@string/transfer_back"

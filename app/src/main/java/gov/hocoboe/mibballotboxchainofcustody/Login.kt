@@ -16,10 +16,16 @@ class Login : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
         val loginButton = view.findViewById<Button>(R.id.login_register_login_button)
+        val registerButton = view.findViewById<Button>(R.id.login_register_register_button)
 
         loginButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_login_to_transfer)
         }
+
+        registerButton.setOnClickListener {
+            view.findNavController().navigate(R.id.action_login_to_register)
+        }
+
         return view
     }
 }

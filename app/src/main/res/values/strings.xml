@@ -50,9 +50,7 @@
 
     <!-- Ballot Bin fragment -->
     <string name="ballot_bin_text">Ballot Bin(s) containing Mail-In Ballots</string>
-    <string name="ballot_bin_steps_text">1. Bin(s) locked and sealed.\n
-        2. Seal #\'s recorded below.\n
-        3. Bin(s) placed in vehicle for transport to HCBOE Main Office.</string>
+    <string name="ballot_bin_steps_text">1. Bin(s) locked and sealed.\n2. Seal #\'s recorded below.\n3. Bin(s) placed in vehicle for transport to HCBOE Main Office.</string>
     <string name="ballot_bin_steps_checked_text">Steps 1–3 completed.</string>
     <string name="ballot_bin_seal1_hint">Ballot Bin #1 Seal #</string>
     <string name="ballot_bin_seal2_hint">Ballot Bin #2 Seal #</string>
@@ -64,7 +62,7 @@
     <string name="transfer_ballot_bins_hint">No. of Ballot Bins</string>
     <string name="transfer_bin1_seal_hint">Ballot Bin #1 Seal #</string>
     <string name="transfer_bin2_seal_hint">Ballot Bin #2 Seal #</string>
-    <string name="transfer_ballots_received_hint">No. of Main-in Ballots Received</string>
+    <string name="transfer_ballots_received_hint">No. of Mail-in Ballots Received</string>
     <string name="transfer_transport_sig">Transporting Signature</string>
     <string name="transfer_receive_sig">Receiving Signature</string>
     <string name="transfer_submit">Submit</string>
