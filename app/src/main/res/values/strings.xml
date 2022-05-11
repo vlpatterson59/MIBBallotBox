@@ -19,7 +19,7 @@
     <string name="register_back">Back</string>
 
     <!-- Retrieve/Transfer Ballots fragment -->
-    <string name="main_retrieve">Retrieve Ballots</string>
+    <string name="main_retrieve">Retrieve\nBallots</string>
     <string name="main_transfer">Transfer Ballots</string>
     <string name="main_logged_in_as">You are logged in as </string>
 
