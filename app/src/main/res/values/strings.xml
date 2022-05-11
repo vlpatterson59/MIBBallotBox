@@ -41,7 +41,9 @@
         2. All mail-in ballots removed and placed in bin(s).\n
         3. Drop box locked and re-sealed as recorded below.</string>
     <string name="mib_steps_checked_text">Steps 1–3 completed.</string>
+    <string name="mib_steps_verify_content_description">complete steps hint</string>
     <string name="mib_removed_seal_text">Removed Seal #:</string>
+    <string name="mib_removed_seal_content_description">verify removed seal hint</string>
     <string name="mib_new_seal_hint">New Seal #</string>
     <string name="mib_submit">Submit</string>
     <string name="mib_back">Back</string>

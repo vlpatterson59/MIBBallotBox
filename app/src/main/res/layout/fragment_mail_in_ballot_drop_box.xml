@@ -11,12 +11,15 @@
         android:id="@+id/mib_dropbox_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="@string/mib_dropbox_text"
         android:textAlignment="viewStart"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="84dp" />
+        app:layout_constraintBottom_toTopOf="@+id/mib_steps_textView"
+        app:layout_constraintStart_toStartOf="@+id/mib_steps_textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
 
     <TextView
         android:id="@+id/mib_steps_textView"
@@ -26,58 +29,128 @@
         android:layout_marginEnd="32dp"
         android:text="@string/mib_steps_text"
         android:textAlignment="viewStart"
-        android:textSize="10sp"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mib_verify_steps_checked"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="131dp" />
+        app:layout_constraintTop_toBottomOf="@+id/mib_dropbox_textView" />
 
     <CheckedTextView
-        android:id="@+id/checkedTextView"
+        android:id="@+id/mib_verify_seal_checked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckedTextView"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="224dp" />
-
-    <CheckedTextView
-        android:id="@+id/checkedTextView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CheckedTextView"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="273dp" />
+        android:layout_marginStart="32dp"
+        android:text="@string/mib_removed_seal_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mib_removed_seal_textView"
+        app:layout_constraintEnd_toStartOf="@+id/mib_verify_removed_imageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_verify_steps_checked" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/mib_removed_seal_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="70dp"
-        tools:layout_editor_absoluteY="352dp" />
+        android:layout_marginStart="32dp"
+        android:text="@string/mib_removed_seal_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/mib_new_seal_editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_verify_seal_checked" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
+        android:id="@+id/mib_new_seal_editText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
         android:ems="10"
+        android:hint="@string/mib_new_seal_hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="434dp" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/mib_submit_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_removed_seal_textView" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/mib_submit_button"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="96dp"
-        tools:layout_editor_absoluteY="537dp" />
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/mib_submit"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/mib_back_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_new_seal_editText" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/mib_back_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="32dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/mib_back"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_submit_button" />
+
+    <ImageView
+        android:id="@+id/mib_verify_removed_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="602dp" />
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/mib_removed_seal_content_description"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="@+id/mib_verify_seal_checked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mib_verify_seal_checked"
+        app:layout_constraintTop_toTopOf="@+id/mib_verify_seal_checked" />
+
+    <ImageView
+        android:id="@+id/mib_verify_steps_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/mib_steps_verify_content_description"
+        android:src="@android:drawable/checkbox_on_background"
+        app:layout_constraintBottom_toBottomOf="@+id/mib_verify_steps_checked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/mib_verify_steps_checked"
+        app:layout_constraintTop_toTopOf="@+id/mib_verify_steps_checked" />
+
+    <CheckedTextView
+        android:id="@+id/mib_verify_steps_checked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="@string/mib_steps_checked_text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/mib_verify_seal_checked"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mib_steps_textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
