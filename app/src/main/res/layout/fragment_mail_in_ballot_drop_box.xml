@@ -66,7 +66,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/mib_new_seal_hint"
         android:importantForAutofill="no"
@@ -74,7 +73,7 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/mib_submit_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mib_camera_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mib_removed_seal_textView" />
@@ -153,4 +152,17 @@
         app:layout_constraintHorizontal_chainStyle="spread_inside"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mib_steps_textView" />
+
+    <ImageButton
+        android:id="@+id/mib_camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/mib_camera_button"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/mib_new_seal_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mib_new_seal_editText"
+        app:layout_constraintTop_toTopOf="@+id/mib_new_seal_editText"
+        tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

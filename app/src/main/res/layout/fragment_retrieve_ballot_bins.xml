@@ -39,7 +39,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/ballot_bin_seal1_hint"
         android:importantForAutofill="no"
@@ -47,7 +46,7 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/ballot_bins_seal2_editText"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ballot_bins_seal1_camera_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ballot_bins_steps_checkedText" />
 
@@ -56,7 +55,6 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/ballot_bin_seal2_hint"
         android:importantForAutofill="no"
@@ -64,7 +62,7 @@
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/ballot_bins_submit_button"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ballot_bin_seal2_camera_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ballot_bins_seal1_editText" />
 
@@ -122,4 +120,29 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/ballot_bins_steps_checkedText"
         app:layout_constraintTop_toTopOf="@+id/ballot_bins_steps_checkedText" />
+
+    <ImageButton
+        android:id="@+id/ballot_bins_seal1_camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/ballot_bin_seal1_camera"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/ballot_bins_seal1_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ballot_bins_seal1_editText"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/ballot_bin_seal2_camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/ballot_bins_seal2_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ballot_bins_seal2_editText"
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck"
+        android:contentDescription="@string/ballot_bin_seal2_camera" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

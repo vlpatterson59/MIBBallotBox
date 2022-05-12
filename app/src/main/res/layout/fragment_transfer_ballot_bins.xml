@@ -43,36 +43,32 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/transfer_bin1_seal_hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/transfer_bin2_seal_editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_seal1_camera_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_ballot_bins_editText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/transfer_ballot_bins_editText" />
 
     <EditText
         android:id="@+id/transfer_bin2_seal_editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:ems="10"
         android:hint="@string/transfer_bin2_seal_hint"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textColorHint="#757575"
         app:layout_constraintBottom_toTopOf="@+id/transfer_mib_received_editText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/transfer_seal2_camera_button"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_bin1_seal_editText"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/transfer_bin1_seal_editText" />
 
     <EditText
         android:id="@+id/transfer_mib_received_editText"
@@ -164,4 +160,28 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/transfer_submit_button" />
+
+    <ImageButton
+        android:id="@+id/transfer_seal1_camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="@string/transfer_seal1_camera"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/transfer_bin1_seal_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transfer_bin1_seal_editText"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageButton
+        android:id="@+id/transfer_seal2_camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/transfer_bin2_seal_editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/transfer_bin2_seal_editText"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/transfer_seal2_camera" />
 </androidx.constraintlayout.widget.ConstraintLayout>
