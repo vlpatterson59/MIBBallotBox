@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ballot Drop Box Integrity Report\nand Acceptance Log</string>
+    <string name="app_name">Ballot Drop Box Integrity Report and Acceptance Log</string>
 
     <!-- Login/Register fragment -->
     <string name="login_register_text">Login/Register User</string>
@@ -16,7 +16,6 @@
     <string name="register_password_hint">Enter a password</string>
     <string name="register_confirm_password_hint">Confirm password</string>
     <string name="register_register">Register</string>
-    <string name="register_back">Back</string>
 
     <!-- Retrieve/Transfer Ballots fragment -->
     <string name="main_retrieve">Retrieve\nBallots</string>
@@ -33,7 +32,6 @@
     <string name="retrieve_sig1">Staff Signature 1</string>
     <string name="retrieve_sig2">Staff Signature 2</string>
     <string name="retrieve_submit">Submit</string>
-    <string name="retrieve_back">Back</string>
 
     <!-- MIB Dropbox fragment -->
     <string name="mib_dropbox_text">Mail-In Ballot Drop Box</string>
@@ -46,7 +44,6 @@
     <string name="mib_removed_seal_content_description">verify removed seal hint</string>
     <string name="mib_new_seal_hint">New Seal #</string>
     <string name="mib_submit">Submit</string>
-    <string name="mib_back">Back</string>
 
     <!-- Ballot Bin fragment -->
     <string name="ballot_bin_text">Ballot Bin(s) containing Mail-In Ballots</string>
@@ -55,7 +52,6 @@
     <string name="ballot_bin_seal1_hint">Ballot Bin #1 Seal #</string>
     <string name="ballot_bin_seal2_hint">Ballot Bin #2 Seal #</string>
     <string name="ballot_bin_submit">Submit</string>
-    <string name="ballot_bin_back">Back</string>
 
     <!-- Transfer fragment -->
     <string name="transfer_text">HCBOE Main Office</string>
@@ -66,11 +62,10 @@
     <string name="transfer_transport_sig">Transporting Signature</string>
     <string name="transfer_receive_sig">Receiving Signature</string>
     <string name="transfer_submit">Submit</string>
-    <string name="transfer_back">Back</string>
 
     <!-- Signature fragment -->
     <string name="signature_clear">Clear</string>
-    <string name="signature_back">Back</string>
+    <string name="signature_cancel">Cancel</string>
     <string name="signature_submit">Accept</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

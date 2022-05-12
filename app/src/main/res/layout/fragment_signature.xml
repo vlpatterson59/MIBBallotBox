@@ -44,7 +44,7 @@
         android:layout_marginEnd="4dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        android:text="@string/signature_back"
+        android:text="@string/signature_cancel"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

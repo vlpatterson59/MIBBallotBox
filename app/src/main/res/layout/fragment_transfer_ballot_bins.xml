@@ -136,30 +136,11 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/transfer_back_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_receive_sig_button" />
-
-    <Button
-        android:id="@+id/transfer_back_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="16dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:text="@string/transfer_back"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transfer_submit_button" />
+        app:layout_constraintTop_toBottomOf="@+id/transfer_receive_sig_button" />
 
     <ImageButton
         android:id="@+id/transfer_seal1_camera_button"
@@ -171,17 +152,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/transfer_bin1_seal_editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/transfer_bin1_seal_editText"
-        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/transfer_seal2_camera_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/transfer_seal2_camera"
         android:src="@android:drawable/ic_menu_camera"
         app:layout_constraintBottom_toBottomOf="@+id/transfer_bin2_seal_editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/transfer_bin2_seal_editText"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:contentDescription="@string/transfer_seal2_camera" />
+        tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
