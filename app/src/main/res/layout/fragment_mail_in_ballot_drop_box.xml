@@ -103,7 +103,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
         android:text="@string/mib_back"

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MIB Ballot Box Chain of Custody</string>
+    <string name="app_name">Ballot Drop Box Integrity Report\nand Acceptance Log</string>
 
     <!-- Login/Register fragment -->
     <string name="login_register_text">Login/Register User</string>

@@ -20,14 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.837" />
 
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        app:constraint_referenced_ids="login_username_editText"
-        tools:layout_editor_absoluteY="260dp" />
-
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/login_username_editText"
         android:layout_width="match_parent"
@@ -59,14 +51,6 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Barrier
-        android:id="@+id/barrier4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:barrierDirection="top"
-        app:constraint_referenced_ids="login_register_login_button"
-        tools:layout_editor_absoluteY="464dp" />
 
     <Button
         android:id="@+id/login_register_register_button"
