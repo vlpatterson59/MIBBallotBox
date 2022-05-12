@@ -29,6 +29,9 @@
         <action
             android:id="@+id/action_transfer_to_transferBallotBins"
             app:destination="@id/transferBallotBins" />
+        <argument
+            android:name="logged_in_as"
+            app:argType="string" />
     </fragment>
     <fragment
         android:id="@+id/register"
