@@ -21,7 +21,6 @@ class RetrieveMain : Fragment() {
         val dropboxSig1Button = view.findViewById<Button>(R.id.dropbox_sig1_button)
         val dropboxSig2Button = view.findViewById<Button>(R.id.dropbox_sig2_button)
         val dropboxSubmitButton = view.findViewById<Button>(R.id.dropbox_submit_button)
-        val dropboxBackButton = view.findViewById<Button>(R.id.dropbox_back_button)
 
         dropboxButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_retrieveMain_to_mailInBallotDropBox)
@@ -40,10 +39,6 @@ class RetrieveMain : Fragment() {
         }
 
         dropboxSubmitButton.setOnClickListener {
-            view.findNavController().navigate(R.id.action_retrieveMain_to_transfer)
-        }
-
-        dropboxBackButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_retrieveMain_to_transfer)
         }
 

@@ -16,13 +16,8 @@ class MailInBallotDropBox : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_mail_in_ballot_drop_box, container, false)
         val mibSubmitButton = view.findViewById<Button>(R.id.mib_submit_button)
-        val mibBackButton = view.findViewById<Button>(R.id.mib_back_button)
 
         mibSubmitButton.setOnClickListener {
-            view.findNavController().navigate(R.id.action_mailInBallotDropBox_to_retrieveMain)
-        }
-
-        mibBackButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_mailInBallotDropBox_to_retrieveMain)
         }
 

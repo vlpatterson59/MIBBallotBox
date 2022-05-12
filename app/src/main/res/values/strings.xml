@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ballot Drop Box Integrity Report and Acceptance Log</string>
+    <string name="app_name">Ballot Drop Box Integrity Report\nand Acceptance Log</string>
 
     <!-- Login/Register fragment -->
     <string name="login_register_text">Login/Register User</string>

@@ -19,7 +19,6 @@ class TransferBallotBins : Fragment() {
         val transportSigButton = view.findViewById<Button>(R.id.transfer_transport_sig_button)
         val receiveSigButton = view.findViewById<Button>(R.id.transfer_receive_sig_button)
         val transportSubmitButton = view.findViewById<Button>(R.id.transfer_submit_button)
-        val transportBackButton = view.findViewById<Button>(R.id.transfer_back_button)
 
         transportSigButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_transferBallotBins_to_signature)
@@ -30,10 +29,6 @@ class TransferBallotBins : Fragment() {
         }
 
         transportSubmitButton.setOnClickListener {
-            view.findNavController().navigate(R.id.action_transferBallotBins_to_transfer)
-        }
-
-        transportBackButton.setOnClickListener {
             view.findNavController().navigate(R.id.action_transferBallotBins_to_transfer)
         }
 
